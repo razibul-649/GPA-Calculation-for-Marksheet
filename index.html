@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@media print{
+			height:310;
+			width:297;
+			.print{
+				display: none;
+			}
+		}
+        .m{
+			border-collapse: collapse;
+		}
+	</style>
+</head>
+<body>
+	
+	<table border="1" class="m">
+		<tr>
+			<th>#sl</th>
+			<th>Sub. Name</th>
+			<th>Sub. Code</th>
+			<th>T. Mark</th>
+			<th>P. Mark</th>
+			<th>Total</th>
+			<th>Grade</th>
+			<th>Point</th>
+			<th>Action</th>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>Bangla 1st P</td>
+			<td>1001</td>
+			<td><input type="text" id="tMark"></td>
+			<td><input type="text" id="pMark"></td>
+			<td><input type="text" id="totalMark"></td>
+			<td><input type="text" id="grade"></td>
+			<td><input type="text" id="point"></td>
+			<td><button onclick="bangla1()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>02</td>
+			<td>Bangla 2nd P</td>
+			<td>1001</td>
+			<td><input type="text" id="tMark1"></td>
+			<td><input type="text" id="pMark1"></td>
+			<td><input type="text" id="totalMark1"></td>
+			<td><input type="text" id="grade1"></td>
+			<td><input type="text" id="point1"></td>
+			<td><button onclick="bangla2()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>03</td>
+			<td>English 1st P</td>
+			<td>2001</td>
+			<td><input type="text" id="tMark2"></td>
+			<td><input type="text" id="pMark2"></td>
+			<td><input type="text" id="totalMark2"></td>
+			<td><input type="text" id="grade2"></td>
+			<td><input type="text" id="point2"></td>
+			<td><button onclick="english1()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>04</td>
+			<td>English 2nd P</td>
+			<td>2002</td>
+			<td><input type="text" id="tMark3"></td>
+			<td><input type="text" id="pMark3"></td>
+			<td><input type="text" id="totalMark3"></td>
+			<td><input type="text" id="grade3"></td>
+			<td><input type="text" id="point3"></td>
+			<td><button onclick="english2()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>05</td>
+			<td>Mathmatics</td>
+			<td>2003</td>
+			<td><input type="text" id="tMark4"></td>
+			<td><input type="text" id="pMark4"></td>
+			<td><input type="text" id="totalMark4"></td>
+			<td><input type="text" id="grade4"></td>
+			<td><input type="text" id="point4"></td>
+			<td><button onclick="math()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>06</td>
+			<td>Physics 1st p</td>
+			<td>2004</td>
+			<td><input type="text" id="tMark5"></td>
+			<td><input type="text" id="pMark5"></td>
+			<td><input type="text" id="totalMark5"></td>
+			<td><input type="text" id="grade5"></td>
+			<td><input type="text" id="point5"></td>
+			<td><button onclick="phy1()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>07</td>
+			<td>Physics 2nd p</td>
+			<td>2005</td>
+			<td><input type="text" id="tMark6"></td>
+			<td><input type="text" id="pMark6"></td>
+			<td><input type="text" id="totalMark6"></td>
+			<td><input type="text" id="grade6"></td>
+			<td><input type="text" id="point6"></td>
+			<td><button onclick="phy2()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>08</td>
+			<td>Chemistry 1st p</td>
+			<td>2005</td>
+			<td><input type="text" id="tMark7"></td>
+			<td><input type="text" id="pMark7"></td>
+			<td><input type="text" id="totalMark7"></td>
+			<td><input type="text" id="grade7"></td>
+			<td><input type="text" id="point7"></td>
+			<td><button onclick="chm1()">Get R</button></td>
+		</tr>
+
+		<tr>
+			<td>09</td>
+			<td>Chemistry 2nd p</td>
+			<td>2006</td>
+			<td><input type="text" id="tMark8"></td>
+			<td><input type="text" id="pMark8"></td>
+			<td><input type="text" id="totalMark8"></td>
+			<td><input type="text" id="grade8"></td>
+			<td><input type="text" id="point8"></td>
+			<td><button onclick="chm2()">Get R</button></td>
+		</tr>
+
+		<tr>
+			<td>10</td>
+			<td>biology 1st p</td>
+			<td>2007</td>
+			<td><input type="text" id="tMark9"></td>
+			<td><input type="text" id="pMark9"></td>
+			<td><input type="text" id="totalMark9"></td>
+			<td><input type="text" id="grade9"></td>
+			<td><input type="text" id="point9"></td>
+			<td><button onclick="bio1()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>biology 2nd p</td>
+			<td>2008</td>
+			<td><input type="text" id="tMark10"></td>
+			<td><input type="text" id="pMark10"></td>
+			<td><input type="text" id="totalMark10"></td>
+			<td><input type="text" id="grade10"></td>
+			<td><input type="text" id="point10"></td>
+			<td><button onclick="bio2()">Get R</button></td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>four S</td>
+			<td>1011</td>
+			<td><input type="text" id="tMark11"></td>
+			<td><input type="text" id="pMark11"></td>
+			<td><input type="text" id="totalMark11"></td>
+			<td><input type="text" id="grade11"></td>
+			<td><input type="text" id="point11"></td>
+			<td><button onclick="fourS()">Get R</button></td>
+		</tr>
+		<tr>
+			<td colspan="5">Total Calculation</td>
+			<td><input type="text" id="total"></td>
+			<td><input type="text" id="totalG"></td>
+			<td><input type="text" id="totalP"></td>
+			<td><button onclick="totalC()">Total</button></td>
+		</tr>
+	</table>
+
+	<button class="print" onclick="window.print()">Print</button>
+	<script src="scripts.js"></script>
+</body>
+</html>
